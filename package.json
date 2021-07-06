@@ -1,0 +1,23 @@
+{
+  "name": "alphaq",
+  "version": "1.0.0",
+  "description": "SIH 2020 Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjunskushwaha/AlphaQ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arjunskushwaha/AlphaQ/issues"
+  },
+  "homepage": "https://github.com/arjunskushwaha/AlphaQ#readme",
+  "dependencies": {
+    "browserify": "^16.5.0",
+    "web3": "^1.2.6"
+  }
+}
