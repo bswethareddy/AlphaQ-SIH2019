@@ -1,0 +1,5 @@
+test account
+public key = 0xc406D1FDd80e5BbADc1801662f5b184D466d46e1
+private key = dcdf6627c81396467170d98c989b679648fc65f4e81b49c9631d57cb38a02e9b
+
+

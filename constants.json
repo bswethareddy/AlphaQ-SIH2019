@@ -1,0 +1,366 @@
+{
+    "statusCode": {
+        "ERROR": {
+            "WRONG_PASSWD": "Incorrect Credentials!",
+            "NO_USER": "User does not exist!",
+            "USER_EXIST": "User already exist!",
+            "NO_STATUS": "Some error occured!"
+        },
+        "SUCCESS": {
+            "LOGIN_SUCCESS": "Login successfull!",
+            "ACCOUNT_CREATED": "Account created successfully!",
+            "PASSWORD_CHANGED": "Password changed successfully!"
+        }
+    },
+    "rpcURL": "https://ropsten.infura.io/v3/b2cc56841f414c7597420256242e2189",
+    "contractAddress": "0x6200FBFC36d33D86C8742Ea9dACdd0eDcf0f4d6d",
+    "contractAbi": [
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_username",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_newpassHash",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_newencKey",
+                    "type": "string"
+                }
+            ],
+            "name": "changePassword",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_username",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_passHash",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "_encKey",
+                    "type": "string"
+                }
+            ],
+            "name": "createAccount",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": true,
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_username",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_tenderDetailHash",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_mindeadline1",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_mindeadline2",
+                    "type": "uint256"
+                }
+            ],
+            "name": "createTender",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_username",
+                    "type": "string"
+                }
+            ],
+            "name": "setTenderCreator",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "bidCode",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "biddableTenders",
+            "outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "",
+                    "type": "uint256[]"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "clientCount",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_username",
+                    "type": "string"
+                }
+            ],
+            "name": "fetchencKey",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_username",
+                    "type": "string"
+                }
+            ],
+            "name": "fetchpassHash",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "tenderCode",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "tenderData",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "creatorUsername",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tenderDetailHash",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline1",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "deadline2",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "winnerDeclared",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "string",
+                    "name": "winnerUsername",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "winnerBidCode",
+                    "type": "string"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "tenderClosedCompany",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "tenderClosedWinner",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "name": "userData",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "passHash",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "encKey",
+                    "type": "string"
+                },
+                {
+                    "internalType": "address",
+                    "name": "puk",
+                    "type": "address"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "isSet",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "isTenderCreator",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_username",
+                    "type": "string"
+                }
+            ],
+            "name": "usernameExists",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ]
+}
